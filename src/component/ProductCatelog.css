@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+.product-section {
+  padding: 40px 20px;
+}
+
+.heading {
+  text-align: center;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+.product-card p {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.category {
+  font-size: 0.8rem;
+  color: #777;
+}

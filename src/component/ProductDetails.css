@@ -1,0 +1,33 @@
+.product-detail-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5vh 5vw;
+  gap: 40px;
+}
+.left-img img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+.right-info {
+    margin-top: 10vh;
+  flex: 1;
+}
+.buy-btn, .add-cart-btn {
+  padding: 10px 20px;
+  margin-right: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.buy-btn {
+  background-color: orange;
+  color: white;
+}
+
+.add-cart-btn {
+  background-color: #222;
+  color: white;
+}

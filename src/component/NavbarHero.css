@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+.navbar-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./../assets/bgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 5vw;
+  color: white;
+}
+
+.navbar-content ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar-content ul li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.center-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.cart-button {
+  margin-top: 6vh;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  background-color: darkorange;
+}
+
+#cart {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 563px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 5vw;
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links.open {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .nav-links ul li {
+    color: white;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+i {
+    visibility: hidden;
+}
+.nav-links.open {
+  right: 0;
+}
+}
